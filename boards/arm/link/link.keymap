@@ -9,6 +9,20 @@
 #include <dt-bindings/zmk/bt.h>
 
 / {
+    behaviors {
+        // needed for home row mods
+        hm: hm {
+            compatible = "zmk,behavior-hold-tap";
+            #binding-cells = <2>;
+            flavor = "balanced";
+            require-prior-idle-ms = <150>;
+            tapping-term-ms = <280>;
+            quick-tap-ms = <175>;
+            bindings = <&kp>, <&kp>;
+            //hold-trigger-key-positions = < ... >; // List of keys on the right side of the keyboard
+            hold-trigger-on-release;
+        };
+
     keymap {
         compatible = "zmk,keymap";
 
@@ -64,6 +78,19 @@
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP &inc_dec_kp PG_DN PG_UP>;
+        };
+
+// Extra layers
+        extra_layer {
+            status = "reserved";
+        };
+
+        extra_layer {
+            status = "reserved";
+        };
+
+        extra_layer {
+            status = "reserved";
         };
     };
 };
