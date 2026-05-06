@@ -1,5 +1,7 @@
 # ZMK Module for CannonKeys Keyboards
 
+[Keymap Editor](https://nickcoutsos.github.io/keymap-editor/)
+
 This is the ZMK module for CannonKeys's ZMK powered PCBs.
 
 The latest version of the firmware will always be available here.
