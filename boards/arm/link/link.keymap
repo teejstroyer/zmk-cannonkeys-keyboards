@@ -22,6 +22,7 @@
             //hold-trigger-key-positions = < ... >; // List of keys on the right side of the keyboard
             hold-trigger-on-release;
         };
+    };
 
     keymap {
         compatible = "zmk,keymap";
