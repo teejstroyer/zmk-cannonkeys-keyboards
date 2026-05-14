@@ -76,8 +76,5 @@
             status = "reserved";
         };
 
-        extra_layer3 {
-            status = "reserved";
-        };
     };
 };
