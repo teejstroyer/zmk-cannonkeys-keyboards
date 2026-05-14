@@ -22,12 +22,6 @@
             //hold-trigger-key-positions = < ... >; // List of keys on the right side of the keyboard
             hold-trigger-on-release;
         };
-        bs_del: bs_del {
-            compatible = "zmk,behavior-mod-morph";
-            #binding-cells = <0>;
-            bindings = <&kp BACKSPACE>, <&kp DELETE>;
-            mods = <(MOD_LSFT | MOD_RSFT)>;
-        };
     };
 
     keymap {
@@ -75,7 +69,6 @@
                              &trans        &kp LCTRL     &kp SPACE      &kp RET   &trans            &kp SPACE  &tog 3   &kp RGUI     &kp RALT      &kp RCTRL
             >;
             sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP &inc_dec_kp PG_DN PG_UP>;
-
         };
 
         // Extra layers
